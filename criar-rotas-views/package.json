@@ -1,0 +1,19 @@
+{
+  "name": "criar-rotas",
+  "version": "1.0.0",
+  "description": "Exemplo de criação de rotas com Express.",
+  "main": "app.js",
+  "scripts": {
+    "dev":"nodemon ./bin/server.js",
+    "start": "node ./bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wellington Wagner F. Sarmento",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "nodemon": "^2.0.7"
+  }
+}
