@@ -17,4 +17,5 @@ const server = app.listen(port,()=>{
 //Criando usando rotas simples que estão no arquivo routes.js
 app.set('view engine','ejs');
 app.use(expressLayouts);
+
 app.use('/',routes);

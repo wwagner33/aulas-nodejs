@@ -10,7 +10,8 @@ router.get('/',(req,res)=>{
 });
 
 router.get('/about',(req,res)=>{
-    res.send('Minha página Sobre');
+    //res.send('Minha página Sobre');
+    res.render('about',{title: 'Sobre quem criou esta página', message:'Sou eu!!!'})
 });
 router.get('/curriculo',(req,res)=>{
     res.send('Meu currículo');
