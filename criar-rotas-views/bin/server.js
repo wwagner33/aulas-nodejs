@@ -1,3 +1,15 @@
+/*
+* Exemplo de aplicação Node.js com MongoDB
+* Autor: Wellington Wagner F. Sarmento
+* 
+*
+* Este exemplo foi baseado no código escrito em:
+* Utilizando a engine EJS para aplicações em NodeJS 
+* (https://www.codementor.io/@nulldreams/utilizando-a-engine-ejs-para-aplicacoes-em-nodejs-dok81l3si)
+*
+*
+*/
+
 const express = require("express");
 const app = express();
 const routes = require("../routes.js");
