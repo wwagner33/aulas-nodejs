@@ -1,9 +1,9 @@
 const express = require("express");
-const expressLayouts = require("express-ejs-layouts");
-const routes = require("../routes.js");
 const app = express();
+const routes = require("../routes.js");
+const expressLayouts = require("express-ejs-layouts");
+
 const port=3030;
-//const host = 'localhost';
 
 //Criando um servidor simples com o Node.js e o Express
 
@@ -14,8 +14,9 @@ const server = app.listen(port,()=>{
 });
 
 
-//Criando usando rotas simples que estão no arquivo routes.js
+//Configurando as Views
 app.set('view engine','ejs');
 app.use(expressLayouts);
 
+//Criando usando rotas simples que estão no arquivo routes.js
 app.use('/',routes);
