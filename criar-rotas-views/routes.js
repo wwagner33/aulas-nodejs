@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const faker = require("faker");
 
 //Especifica a pasta contendo arquivos estáticos. 
 //O nome 'public' não precisará ser colocado na rota 
@@ -9,13 +10,18 @@ router.use(express.static('public'));
 
 
 router.get('/',(req,res)=>{
-    // res.render('Minha página Home!!');
     res.render('pages/home');
 });
 
 router.get('/about',(req,res)=>{
-    //res.send('Minha página Sobre');
-    res.render('about',{title: 'Sobre quem criou esta página', message:'Sou eu!!!'})
+
+    let usuarios=[];
+    //Usando o Faker para criar 6 perfis para colocar no about
+    for(let cont=1;cont<=6;cont++){
+        usuarios.push({name:faker.name.findName(),email: faker.internet.email(),avatar: faker.image.image()});
+    }
+    console.log(usuarios);
+    res.render('pages/about',{usuarios});
 });
 
 router.get('/curriculo',(req,res)=>{
