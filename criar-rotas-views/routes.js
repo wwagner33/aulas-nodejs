@@ -1,6 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const faker = require("faker");
+const model = require("./app.js");
+const criar = 
 
 //Especifica a pasta contendo arquivos estáticos. 
 //O nome 'public' não precisará ser colocado na rota 
@@ -8,7 +10,15 @@ const faker = require("faker");
 //Por isso na imagem que está na página home.ejs só há o indicativo para 'images'
 router.use(express.static('public'));
 
+//Exemplode Rotas: 
+/*
 
+/ = http://localhost:3030/
+/about = http://localhost:3030/about
+/curriculo =  http://localhost:3030/curriculo
+/cadastro =  http://localhost:3030/cadastro
+
+*/
 router.get('/',(req,res)=>{
     res.render('pages/home');
 });
@@ -27,6 +37,14 @@ router.get('/about',(req,res)=>{
 router.get('/curriculo',(req,res)=>{
     res.send('Meu currículo');
 });
+
+router.get('/cadastro/create',(req,res)=>{
+
+    console.log("Meu cadastro");
+    res.send({});
+});
+
+
 
 //Essa linha permite que este código seja exportado como um módulo e possa ser usado em outras partes da aplicação.
 module.exports = router; 
