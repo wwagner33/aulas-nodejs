@@ -14,6 +14,7 @@ const express = require("express");
 const app = express();
 const routes = require("../routes.js");
 const expressLayouts = require("express-ejs-layouts");
+const { route } = require("../routes.js");
 
 const port=3030;
 
