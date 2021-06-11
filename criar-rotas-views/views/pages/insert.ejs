@@ -1,0 +1,13 @@
+<%- contentFor('body') %>
+<div class="jumbotron text-center">
+    <h1>Inserindo usuários na base</h1>
+    <div class="row">
+        <% for (usuario of result){%>
+            <div class="col-sm-4">
+                <h3><%= usuario.name %></h3>
+                <h4><%= usuario.email %></h4>
+                <img class="img-responsive" style="height: 50px" src="<%= usuario.avatar %>">
+            </div>
+            <% } %>
+    </div>
+</div>

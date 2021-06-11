@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <!--
+  Código baseado em material do Bootstrap presente em: 
+  https://project-rfs.github.io/docs/4.3/examples/jumbotron/
+  -->
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Responsividade</title>
+
+</head>
+<body>
+  <header>
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Formulário</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Ação 01</a>
+              <a class="dropdown-item" href="#">Ação 02</a>
+            </div>
+          </li>
+        </ul>
+<!--         <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form> -->
+      </div>
+     </nav>
+  </header>  
+
+   <main role="main">
+     <div class="jumbotron">
+        <div class="container">
+          <div class="jumbotron text-center">
+   <h1 class="title">
+      The responsive-font-size mixin
+    </h1>
+    
+    <article class="article">
+      <h2 class="article__title">
+        Automated font-size rescaling with SCSS
+      </h2>
+      <p class="article__date">
+        2017/12/21
+      </p>
+      <p class="article__content">
+        This text automatically rescales thanks to the <a href="https://github.com/MartijnCuppens/postcss-rfs">RFS mixin</a>. It uses the RFS algorithm to automatically calculate the appropriate font size based on the dimensions of the monitor or device.
+      </p>
+    </article>
+    <article class="article">
+      <h2 class="article__title">PostCSS alternative</h2>
+      <p class="article__content">
+          A <a href="https://github.com/MartijnCuppens/postcss-rfs" target="_blank">PostCSS plugin</a> is available which uses the <code>responsive-font-size</code> property.<br>
+        <i>
+        <b>Update:</b> In the meanwhile the PostCSS plugin is also included in the main RFS project.
+        </i>
+        </p>
+    </article>
+    <article class="article">
+      <h2 class="article__title">RFS in Bootstrap?</h2>
+      <p class="article__content">Currenty there is an open feature-request to put RFS in Bootstrap: <a href="https://github.com/twbs/bootstrap/issues/23053">Responsive font sizes</a>. The result of RFS in Bootstrap is shown on <a href="http://martijncuppens.github.io/rfs/">the bootstrap RFS demo site</a>.<br>
+        <i>
+        <b>Update:</b> In the meanwhile RFS is also included in Bootstrap.
+      </i>
+        </p>
+    </article>
+    <article class="article disable-rfs">
+      <h2 class="article__title">Disable responsive font-size</h2>
+      <div class="article__content">Responsive font-sizing can be disabled within an element by adding the <code>.disable-rfs</code> class
+      <br>
+        <i>
+        <b>Update:</b> In the meanwhile this feature is disabled by default because it generates more css. You can enable it by setting <code>$rfs-class: "disable"</code> in scss like in this codepen.
+      </i>
+      </div>
+    </article>
+    <article class="article">
+      <h2 class="article__title">Lorem ipsum text</h2>
+      <div class="article__content">No demo without Lorem ipsum text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident tenetur delectus fuga et, doloribus rerum! Aperiam voluptate mollitia rerum necessitatibus repudiandae asperiores doloremque deleniti praesentium,
+        dolorem maxime, quia, libero. Maiores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio quidem, obcaecati aperiam! Distinctio porro pariatur labore veniam deserunt mollitia consectetur unde voluptatem blanditiis eaque aperiam,
+        sequi sed vero debitis!</div>
+    </article>
+</div>
+        </div>
+     </div>
+     
+   </main>
+
+   <footer class="container">
+    <p>&copy; Company 2017-2019</p>
+  </footer>
+
+  <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+</body>
+</html>

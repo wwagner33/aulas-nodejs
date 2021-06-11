@@ -4,8 +4,8 @@
   "description": "Exemplo de criação de rotas com Express.",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon ./bin/server.js",
-    "start": "node ./bin/server.js",
+    "dev": "nodemon bin/server",
+    "start": "node bin/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Wellington Wagner F. Sarmento",
